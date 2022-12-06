@@ -1,0 +1,14 @@
+{
+    "name": "tecnm-dpii/cvu-api2-client",
+    "autoload": {
+        "psr-4": {
+            "TecNM_DPII\\CvuApi2Client\\": "src"
+        }
+    },
+    "require": {
+        "francerz/oauth2-client": "^0.3.2",
+        "tecnm-dpii/cvu-api2-core": "^0.1.0",
+        "francerz/crypto": "^0.1.0",
+        "francerz/http": "^0.3.14"
+    }
+}
