@@ -47,8 +47,8 @@ abstract class AbstractResource
     ): RequestInterface {
         $uri = $this->client->getCvuOAuth2Client()->getResourcesEndpoint();
         $uri = UriHelper::appendPath($uri, $path);
-        if (!empty($params)) {
-            $uri = UriHelper::withQueryParams($uri, $params);
+        if (!empty($queryParams)) {
+            $uri = UriHelper::withQueryParams($uri, $queryParams);
         }
 
         $requestFactory = $this->client->getHttpFactoryManager()->getRequestFactory();
