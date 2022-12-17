@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9df74ec9aa2b8635fd3425a342eb7428",
+    "content-hash": "9450a064f06e01c01939888e7fccbbf4",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -553,16 +553,16 @@
         },
         {
             "name": "tecnm-dpii/cvu-api2-core",
-            "version": "v0.1.3",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnm-dpii/cvu-api2-core.git",
-                "reference": "a04f1422c740afe3114bc3eb15408383ba4b5f1e"
+                "reference": "ab0321d77f1f0351912eada35e938062090101f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/a04f1422c740afe3114bc3eb15408383ba4b5f1e",
-                "reference": "a04f1422c740afe3114bc3eb15408383ba4b5f1e",
+                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/ab0321d77f1f0351912eada35e938062090101f9",
+                "reference": "ab0321d77f1f0351912eada35e938062090101f9",
                 "shasum": ""
             },
             "require": {
@@ -581,9 +581,9 @@
             "description": "Core elements of CVU API 2.",
             "support": {
                 "issues": "https://github.com/tecnm-dpii/cvu-api2-core/issues",
-                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.3"
+                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.4"
             },
-            "time": "2022-12-06T16:25:31+00:00"
+            "time": "2022-12-17T20:15:26+00:00"
         }
     ],
     "packages-dev": [],
