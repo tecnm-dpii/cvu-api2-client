@@ -4,6 +4,7 @@ namespace TecNM_DPII\CvuApi2Client;
 
 use Francerz\Http\Client;
 use Francerz\Http\HttpFactory;
+use Francerz\OAuth2\AccessToken;
 use Francerz\OAuth2\Client\OAuth2Client;
 use RuntimeException;
 
@@ -71,5 +72,10 @@ class CvuApi2Client
     public function getHttpFactoryManager()
     {
         return $this->httpFactoryManager;
+    }
+
+    public function setOwnerAccessToken(AccessToken $accessToken)
+    {
+        $this->oauth2Client->setOwnerAccessToken($accessToken, true);
     }
 }
