@@ -42,6 +42,7 @@ class CvuApi2Client
             $this->cvuOauth2Client,
             $this->cvuOauth2Client
         );
+        $this->oauth2Client->preferBodyAuthentication();
 
         static::$lastInstance = $this;
     }

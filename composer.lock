@@ -268,16 +268,16 @@
         },
         {
             "name": "francerz/oauth2-client",
-            "version": "v0.3.2",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-oauth2-client.git",
-                "reference": "1fb893f32cc7d0117cf5f8420fda3649d9e3759e"
+                "reference": "2ab90e03307ebc2777fcb7c73c97f4c00aabe4ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-oauth2-client/zipball/1fb893f32cc7d0117cf5f8420fda3649d9e3759e",
-                "reference": "1fb893f32cc7d0117cf5f8420fda3649d9e3759e",
+                "url": "https://api.github.com/repos/francerz/php-oauth2-client/zipball/2ab90e03307ebc2777fcb7c73c97f4c00aabe4ec",
+                "reference": "2ab90e03307ebc2777fcb7c73c97f4c00aabe4ec",
                 "shasum": ""
             },
             "require": {
@@ -307,9 +307,9 @@
             ],
             "support": {
                 "issues": "https://github.com/francerz/php-oauth2-client/issues",
-                "source": "https://github.com/francerz/php-oauth2-client/tree/v0.3.2"
+                "source": "https://github.com/francerz/php-oauth2-client/tree/v0.3.3"
             },
-            "time": "2022-11-25T19:12:14+00:00"
+            "time": "2022-12-18T03:03:47+00:00"
         },
         {
             "name": "francerz/oauth2-core",
@@ -553,16 +553,16 @@
         },
         {
             "name": "tecnm-dpii/cvu-api2-core",
-            "version": "v0.1.4",
+            "version": "v0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnm-dpii/cvu-api2-core.git",
-                "reference": "ab0321d77f1f0351912eada35e938062090101f9"
+                "reference": "1ca2942b11583a881ec8c4e6d58eed43dca39d1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/ab0321d77f1f0351912eada35e938062090101f9",
-                "reference": "ab0321d77f1f0351912eada35e938062090101f9",
+                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/1ca2942b11583a881ec8c4e6d58eed43dca39d1c",
+                "reference": "1ca2942b11583a881ec8c4e6d58eed43dca39d1c",
                 "shasum": ""
             },
             "require": {
@@ -581,9 +581,9 @@
             "description": "Core elements of CVU API 2.",
             "support": {
                 "issues": "https://github.com/tecnm-dpii/cvu-api2-core/issues",
-                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.4"
+                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.7"
             },
-            "time": "2022-12-17T20:15:26+00:00"
+            "time": "2022-12-18T01:39:24+00:00"
         }
     ],
     "packages-dev": [],
