@@ -29,13 +29,13 @@ class CvuApi2OAuth2Client implements
     private const DEFAULT_TOKEN_ENDPOINT = 'https://cvu.dpii.tecnm.mx/index.php/oauth2/token';
     private const DEFAULT_RESOURCES_ENDPOINT = 'https://cvu.dpii.tecnm.mx/api2/index.php';
 
-    private const ENV_KEY_CLIENT_ID = 'CVU_API2_CLIENT_ID';
-    private const ENV_KEY_CLIENT_SECRET = 'CVU_API2_CLIENT_SECRET';
+    private const ENV_KEY_CLIENT_ID = 'TECNM_CVU_API2_CLIENT_ID';
+    private const ENV_KEY_CLIENT_SECRET = 'TECNM_CVU_API2_CLIENT_SECRET';
 
-    private const SESSION_KEY_CLIENT_ACCESS_TOKEN = 'cvu-api2.client-access-token';
-    private const SESSION_KEY_OWNER_ACCESS_TOKEN = 'cvu-api2.owner-access-token';
-    private const SESSION_KEY_STATE = 'cvu-api2.state';
-    private const SESSION_KEY_PKCE_CODE = 'cvu-api2.pkce-code';
+    private const SESSION_KEY_CLIENT_ACCESS_TOKEN = 'tecnm-cvu-api2.client-access-token';
+    private const SESSION_KEY_OWNER_ACCESS_TOKEN = 'tecnm-cvu-api2.owner-access-token';
+    private const SESSION_KEY_STATE = 'tecnm-cvu-api2.state';
+    private const SESSION_KEY_PKCE_CODE = 'tecnm-cvu-api2.pkce-code';
     #endregion
 
     private $clientId = '';
