@@ -553,16 +553,16 @@
         },
         {
             "name": "tecnm-dpii/cvu-api2-core",
-            "version": "v0.1.10",
+            "version": "v0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnm-dpii/cvu-api2-core.git",
-                "reference": "486f581e197cdfe36b069be0f11d55d1a4a04627"
+                "reference": "827a4392024eacdab8622da8e8e6dc3662d72f97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/486f581e197cdfe36b069be0f11d55d1a4a04627",
-                "reference": "486f581e197cdfe36b069be0f11d55d1a4a04627",
+                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/827a4392024eacdab8622da8e8e6dc3662d72f97",
+                "reference": "827a4392024eacdab8622da8e8e6dc3662d72f97",
                 "shasum": ""
             },
             "require": {
@@ -581,9 +581,9 @@
             "description": "Core elements of CVU API 2.",
             "support": {
                 "issues": "https://github.com/tecnm-dpii/cvu-api2-core/issues",
-                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.10"
+                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.11"
             },
-            "time": "2022-12-27T23:49:26+00:00"
+            "time": "2022-12-28T01:01:52+00:00"
         }
     ],
     "packages-dev": [],
