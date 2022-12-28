@@ -14,7 +14,7 @@ class PerfilesResource extends AbstractResource
      */
     public function getById($id_persona)
     {
-        $response = $this->protectedGet("/cvu-admin/perfil/{$id_persona}");
+        $response = $this->protectedGet("/cvu-admin/{$id_persona}/perfil");
         return JsonEncoder::decode((string)$response->getBody(), Perfil::class);
     }
 
@@ -24,7 +24,7 @@ class PerfilesResource extends AbstractResource
      */
     public function getByCvuTecnm($cvu_tecnm)
     {
-        $response = $this->protectedGet("/cvu-admin/perfil/@cvu/{$cvu_tecnm}");
+        $response = $this->protectedGet("/cvu-admin/@cvu/{$cvu_tecnm}/perfil");
         return JsonEncoder::decode((string)$response->getBody(), Perfil::class);
     }
 
@@ -34,7 +34,7 @@ class PerfilesResource extends AbstractResource
      */
     public function getByCurp($curp)
     {
-        $response = $this->protectedGet("/cvu-admin/perfil/@curp/{$curp}");
+        $response = $this->protectedGet("/cvu-admin/@curp/{$curp}/perfil");
         return JsonEncoder::decode((string)$response->getBody(), Perfil::class);
     }
 
@@ -44,7 +44,7 @@ class PerfilesResource extends AbstractResource
      */
     public function getByRfc($rfc)
     {
-        $response = $this->protectedGet("/cvu-admin/perfil/@rfc/{$rfc}");
+        $response = $this->protectedGet("/cvu-admin/@rfc/{$rfc}/perfil");
         return JsonEncoder::decode((string)$response->getBody(), Perfil::class);
     }
 }
