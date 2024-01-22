@@ -224,6 +224,10 @@ class CvuApi2OAuth2Client implements
         }
     }
 
+    public function discardClientAccessToken()
+    {
+    }
+
     public function loadOwnerAccessToken(): ?AccessToken
     {
         $accessToken = $_SESSION[self::SESSION_KEY_OWNER_ACCESS_TOKEN] ?? null;
@@ -233,6 +237,11 @@ class CvuApi2OAuth2Client implements
     public function saveOwnerAccessToken(AccessToken $accessToken)
     {
         $_SESSION[self::SESSION_KEY_OWNER_ACCESS_TOKEN] = $accessToken;
+    }
+
+    public function discardOwnerAccessToken()
+    {
+        unset($_SESSION[self::SESSION_KEY_OWNER_ACCESS_TOKEN]);
     }
 
     public function generateState(): string
