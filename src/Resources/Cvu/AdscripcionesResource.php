@@ -11,32 +11,65 @@ use TecNM_DPII\CvuApi2Core\Models\Cvu\Puesto;
 class AdscripcionesResource extends AbstractResource
 {
     /**
+     * @deprecated
      * @return Adscripcion
      */
     public function getCurrent()
     {
         $this->requiresOwnerAccessToken(true);
-        $response = $this->protectedGet('/cvu/adscripciones/@current');
+        $response = $this->protectedGet('/cvu/my/adscripciones/@current');
+        return JsonEncoder::decode((string)$response->getBody(), Adscripcion::class);
+    }
+
+    /**
+     * @deprecated
+     * @return Plaza[]
+     */
+    public function getCurrentPlazas()
+    {
+        $this->requiresOwnerAccessToken(true);
+        $response = $this->protectedGet('/cvu/my/adscripciones/@current/plazas');
+        return JsonEncoder::decode((string)$response->getBody(), Plaza::class);
+    }
+
+    /**
+     * @deprecated
+     * @return Puesto[]
+     */
+    public function getCurrentPuestos()
+    {
+        $this->requiresOwnerAccessToken(true);
+        $response = $this->protectedGet('/cvu/my/adscripciones/@current/puestos');
+        return JsonEncoder::decode((string)$response->getBody(), Puesto::class);
+    }
+
+    /**
+     * @return Adscripcion
+     */
+    public function getMyCurrent()
+    {
+        $this->requiresOwnerAccessToken(true);
+        $response = $this->protectedGet('/cvu/my/adscripciones/@current');
         return JsonEncoder::decode((string)$response->getBody(), Adscripcion::class);
     }
 
     /**
      * @return Plaza[]
      */
-    public function getCurrentPlazas()
+    public function getMyCurrentPlazas()
     {
         $this->requiresOwnerAccessToken(true);
-        $response = $this->protectedGet('/cvu/adscripciones/@current/plazas');
+        $response = $this->protectedGet('/cvu/my/adscripciones/@current/plazas');
         return JsonEncoder::decode((string)$response->getBody(), Plaza::class);
     }
 
     /**
      * @return Puesto[]
      */
-    public function getCurrentPuestos()
+    public function getMyCurrentPuestos()
     {
         $this->requiresOwnerAccessToken(true);
-        $response = $this->protectedGet('/cvu/adscripciones/@current/puestos');
+        $response = $this->protectedGet('/cvu/my/adscripciones/@current/puestos');
         return JsonEncoder::decode((string)$response->getBody(), Puesto::class);
     }
 }
