@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9450a064f06e01c01939888e7fccbbf4",
+    "content-hash": "b458aec056a7b308fac676df55c9204b",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -137,16 +137,16 @@
         },
         {
             "name": "francerz/http",
-            "version": "v0.3.20",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francerz/php-http.git",
-                "reference": "7232638748a941185b589128619f2ac77575c1ff"
+                "reference": "cad42218e1cdb58b7b9789e52227f1832d60da61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francerz/php-http/zipball/7232638748a941185b589128619f2ac77575c1ff",
-                "reference": "7232638748a941185b589128619f2ac77575c1ff",
+                "url": "https://api.github.com/repos/francerz/php-http/zipball/cad42218e1cdb58b7b9789e52227f1832d60da61",
+                "reference": "cad42218e1cdb58b7b9789e52227f1832d60da61",
                 "shasum": ""
             },
             "require": {
@@ -169,9 +169,9 @@
             "description": "Basic HTTP client",
             "support": {
                 "issues": "https://github.com/francerz/php-http/issues",
-                "source": "https://github.com/francerz/php-http/tree/v0.3.20"
+                "source": "https://github.com/francerz/php-http/tree/v0.4.1"
             },
-            "time": "2024-05-07T16:33:35+00:00"
+            "time": "2025-03-28T18:40:09+00:00"
         },
         {
             "name": "francerz/http-utils",
