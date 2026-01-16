@@ -23,7 +23,7 @@ class TematicaResource extends AbstractResource
      */
     public function getDisciplinas()
     {
-        $response = $this->protectedGet('/catalogos/tematica-disciplina');
+        $response = $this->protectedGet('/catalogos/tematica-disciplinas');
         return JsonEncoder::decode((string)$response->getBody(), DisciplinaTematica::class);
     }
 }
