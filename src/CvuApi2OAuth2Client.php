@@ -25,6 +25,8 @@ class CvuApi2OAuth2Client implements
     PKCEManagerInterface
 {
     #region Constants
+    public const ENV_KEY_EMAIL_OVERRIDE = 'TECNM_CVU_API2_EMAIL_OVERRIDE';
+
     private const DEFAULT_AUTHORIZATION_ENDPOINT = 'https://cvu.dpii.tecnm.mx/index.php/oauth2/authorize';
     private const DEFAULT_TOKEN_ENDPOINT = 'https://cvu.dpii.tecnm.mx/index.php/oauth2/token';
     private const DEFAULT_RESOURCES_ENDPOINT = 'https://cvu.dpii.tecnm.mx/api2/index.php';
@@ -60,6 +62,11 @@ class CvuApi2OAuth2Client implements
             throw new InvalidArgumentException("Invalid value to convert to Uri Interface");
         }
         return new Uri($value);
+    }
+
+    public static function getEnv($varname, $localOnly = false)
+    {
+        return getenv($varname, $localOnly) ?: $_ENV[$varname] ?? null;
     }
     #endregion
 

@@ -17,6 +17,7 @@ abstract class AbstractResource
     private $client;
     private $httpHelper;
     private $requiresOwnerAccessToken = false;
+    private $requiresClientAccessToken = false;
 
     public function __construct(?CvuApi2Client $client = null)
     {
@@ -53,7 +54,9 @@ abstract class AbstractResource
 
         $requestFactory = $this->client->getHttpFactoryManager()->getRequestFactory();
         $request = $requestFactory->createRequest($method, $uri);
-        // $request = $this->client->getOAuth2Client()->bindClientAccessToken($request);
+        if (false && $this->requiresClientAccessToken) {
+            $request = $this->client->getOAuth2Client()->bindClientAccessToken($request);
+        }
         if ($this->requiresOwnerAccessToken) {
             $request = $this->client->getOAuth2Client()->bindOwnerAccessToken($request);
         }
@@ -71,9 +74,23 @@ abstract class AbstractResource
         return $this->sendRequest($request);
     }
 
+    protected function protectedPost(
+        string $path,
+        $content,
+        string $mediaType = MediaTypes::APPLICATION_X_WWW_FORM_URLENCODED
+    ) {
+        $request = $this->buildRequest(RequestMethodInterface::METHOD_POST, $path, [], $content, $mediaType);
+        return $this->sendRequest($request);
+    }
+
     protected function requiresOwnerAccessToken(bool $required = true)
     {
         $this->requiresOwnerAccessToken = $required;
+    }
+
+    protected function requiresClientAccessToken(bool $required = true)
+    {
+        $this->requiresClientAccessToken = $required;
     }
 
     protected function sendRequest(RequestInterface $request): ResponseInterface

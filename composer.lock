@@ -548,20 +548,22 @@
         },
         {
             "name": "tecnm-dpii/cvu-api2-core",
-            "version": "v0.1.16",
+            "version": "v0.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnm-dpii/cvu-api2-core.git",
-                "reference": "c779cd592dbc9ba7a5ac82f5b3e2f4d6543e0342"
+                "reference": "1be2ce4e0c53a537e071118b2c0a21a55e93c191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/c779cd592dbc9ba7a5ac82f5b3e2f4d6543e0342",
-                "reference": "c779cd592dbc9ba7a5ac82f5b3e2f4d6543e0342",
+                "url": "https://api.github.com/repos/tecnm-dpii/cvu-api2-core/zipball/1be2ce4e0c53a537e071118b2c0a21a55e93c191",
+                "reference": "1be2ce4e0c53a537e071118b2c0a21a55e93c191",
                 "shasum": ""
             },
             "require": {
-                "francerz/json-tools": "^0.1.0"
+                "francerz/json-tools": "^0.1.0",
+                "francerz/php-power-data": "^0.1.39",
+                "psr/http-message": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -576,9 +578,9 @@
             "description": "Core elements of CVU API 2.",
             "support": {
                 "issues": "https://github.com/tecnm-dpii/cvu-api2-core/issues",
-                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.16"
+                "source": "https://github.com/tecnm-dpii/cvu-api2-core/tree/v0.1.20"
             },
-            "time": "2026-01-15T21:56:29+00:00"
+            "time": "2026-10-05T17:25:14+00:00"
         }
     ],
     "packages-dev": [],
